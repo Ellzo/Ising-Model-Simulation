@@ -1,4 +1,5 @@
 import numpy as np
+import time
 
 class MCMCSimulator:
     def __init__(self, T=2.5, steps=1000):
@@ -6,7 +7,7 @@ class MCMCSimulator:
         self.steps = steps
         self.running = False
 
-    def metropolis_step(self, model):
+    def __metropolis_step(self, model):
         """ Perform Metropolis-Hastings step """
         for _ in range(self.steps):
             i, j = np.random.randint(0, model.N, size=2)

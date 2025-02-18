@@ -18,7 +18,7 @@ class IsingModel:
     
     def reintialize_model(self, N, J=None, h=None, lattice=None):
         if N:
-            self.N = int(N)
+            self.N = int(round(float(N)))
         
         if J is not None:
             self.J = float(J)
