@@ -3,6 +3,8 @@
 ## Overview
 This project simulates the Ising Model using the Markov Chain Monte Carlo (MCMC) method. It provides both a command-line interface (CLI) and a graphical user interface (GUI) for running simulations.
 
+![GUI Video Demo of the Simulation](res/record.GIF)
+
 ## Installation
 Ensure you have Python installed (>=3.8). Then, clone the repository and install the required dependencies:
 
