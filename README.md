@@ -26,15 +26,11 @@ The system evolves using the Metropolis-Hastings algorithm, which follows these 
 1. Select a random spin $` s_i `$ in the lattice.
 2. Compute the change in energy if the spin is flipped:
 
-   ```math
-   \Delta H = 2J s_i \sum_{j \in \text{neighbors}} s_j + 2 \mu B s_i
-   ```
+   $$\Delta H = 2J s_i \sum_{j \in \text{neighbors}} s_j + 2 \mu B s_i$$
 
 3. Accept the flip with probability:
 
-   ```math
-   P(\text{flip}) = \min(1, e^{-\Delta H / k_B T})
-   ```
+   $$P(\text{flip}) = \min(1, e^{-\Delta H / k_B T})$$
 
    where $` k_B `$ is the Boltzmann constant and $` T `$ is the temperature.
 
